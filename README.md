@@ -1,91 +1,94 @@
-# **Cronômetro (Timer)**
+# **Timer**
 
-Este é um projeto em Python que implementa um cronômetro com opções de tempo configuráveis, permitindo que o usuário defina a duração e o formato (horas, minutos, segundos ou centésimos). O cronômetro conta regressivamente até zerar e oferece a opção de retornar ao menu principal.
-
----
-
-## **Funcionalidades**
-
-- **Configuração de Tempo:** O usuário pode definir a duração do cronômetro em horas, minutos, segundos ou centésimos.
-- **Contagem Regressiva:** O cronômetro conta regressivamente e exibe o tempo restante de forma clara no terminal.
-- **Opções de Menu:**
-  - Iniciar o cronômetro.
-  - Sair do programa.
+This is a Python project that implements a timer with configurable time options, allowing the user to set the duration and format (hours, minutes, seconds, or hundredths). The timer counts down to zero and offers the option to return to the main menu.
 
 ---
 
-## **Como Usar**
+## **Features**
 
-1. Execute o programa no terminal.
-2. O menu principal será exibido, permitindo que você escolha entre:
-   - **1** para iniciar o cronômetro.
-   - **2** para sair do programa.
-3. Ao iniciar o cronômetro:
-   - Informe o tempo desejado.
-   - Escolha a unidade de tempo (horas, minutos, segundos ou centésimos).
-4. O cronômetro começará a contagem regressiva.
-5. Após o tempo acabar, o programa pedirá para você voltar ao menu principal.
+* **Time Configuration:** The user can set the timer duration in hours, minutes, seconds, or hundredths.
+* **Countdown:** The timer counts down and clearly displays the remaining time in the terminal.
+* **Menu Options:**
+
+  * Start the timer.
+  * Exit the program.
 
 ---
 
-## **Exemplo de Execução**
+## **How to Use**
 
-Quando o programa for iniciado, o menu será exibido assim:
+1. Run the program in the terminal.
+2. The main menu will appear, allowing you to choose between:
+
+   * **1** to start the timer.
+   * **2** to exit the program.
+3. When starting the timer:
+
+   * Enter the desired time.
+   * Choose the time unit (hours, minutes, seconds, or hundredths).
+4. The timer will start counting down.
+5. After the time runs out, the program will prompt you to return to the main menu.
+
+---
+
+## **Example Run**
+
+When the program starts, the menu will be displayed like this:
 
 ```
 * Menu *
-1- Começar
-2- Sair
+1- Start
+2- Exit
 R: 
 ```
 
-Após escolher a opção 1, o programa solicitará o tempo e a unidade:
+After choosing option 1, the program will ask for the time and unit:
 
 ```
-Digite quanto tempo o temporizador vai ter: 5
-Esse valor será em
-H- Horas
-M- Minutos
-S- Segundos
-CS- Centesimos
+Enter how long the timer will run: 5
+This value will be in
+H- Hours
+M- Minutes
+S- Seconds
+CS- Hundredths
 R: m
 ```
 
-O cronômetro então começará a contagem regressiva e será exibido da seguinte forma:
+The timer will then begin counting down and be displayed as follows:
 
 ```
 hh:mm:ss:m
 00:01:00:9
 ```
 
-O cronômetro continuará a contagem até zerar.
+The timer will continue counting down until it reaches zero.
 
 ---
 
-## **Requisitos**
+## **Requirements**
 
-- **Python 3.x**: O código foi desenvolvido para funcionar com versões mais recentes do Python.
+* **Python 3.x:** The code was developed to work with recent Python versions.
 
 ---
 
-## **Como Executar**
+## **How to Run**
 
-1. Certifique-se de ter o Python 3 instalado no seu sistema.
-2. Baixe o código-fonte e salve-o em um arquivo chamado `cronometro.py`.
-3. Abra o terminal e navegue até o diretório onde o arquivo está salvo.
-4. Execute o comando:
+1. Make sure Python 3 is installed on your system.
+2. Download the source code and save it as `timer.py`.
+3. Open the terminal and navigate to the directory where the file is saved.
+4. Run the command:
+
    ```bash
-   python cronometro.py
+   python timer.py
    ```
 
 ---
 
-## **Observações**
+## **Notes**
 
-- O comando `os.system('cls')` é utilizado para limpar a tela do terminal e funciona apenas no Windows. Se você estiver utilizando um sistema Linux ou macOS, substitua esse comando por `os.system('clear')` para garantir que a tela seja limpa corretamente.
-- O programa aceita entradas apenas numéricas e respeita as condições de tempo configuráveis, validando as opções inseridas pelo usuário.
+* The command `os.system('cls')` is used to clear the terminal screen and works only on Windows. If you are using Linux or macOS, replace this command with `os.system('clear')` to ensure the screen clears properly.
+* The program accepts numeric inputs only and validates the user’s configured time options accordingly.
 
 ---
 
-Divirta-se e bom uso! 😊
-```
+Have fun and enjoy! 😊
